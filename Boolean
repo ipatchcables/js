@@ -36,3 +36,11 @@ console.log(Boolean(isString)); //
 var nonAssignedVariable;
 console.log(typeof nonAssingedVariable); //Undefined as no type specified
 
+
+var myArray = ["1", "2", "3","4"]; // boolean on arrays
+console.log(Boolean(myArray));
+
+if (myArray) {
+console.log("Has truthy values");
+} else {
+console.log("Has false vaules");
