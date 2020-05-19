@@ -1,1 +1,18 @@
+// Objects
+// Collection of name value pairs
 
+var myOtherObject = {
+  1: "Chris",
+  2: "Derp",
+  3: "MAtt",
+};
+
+console.log(myOtherObject);
+
+var datad = {
+  First Name: "Fuck",
+  Last name: "Face",
+  Gas : "Elizabethtown Gas",
+};
+
+console.log(datad);
