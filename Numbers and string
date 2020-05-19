@@ -8,3 +8,4 @@ console.log(Math.PI); //PI
 console.log("10" + 213);// String and number
 console.log(parseInt("10") + 213); //  Force to read Int
 console.log(parseInt("10", 10) + 213); // read base10
+console.log(isNaN("hello")); //NaN (not a number) = true
