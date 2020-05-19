@@ -5,4 +5,6 @@ console.log(10 % 6);
 console.log(Math.random); //random number
 console.log(Math.PI); //PI
 
-console.log("10" + 213); String and number
+console.log("10" + 213);// String and number
+console.log(parseInt("10") + 213); //
+console.log(parseInt("10", 10) + 213); // Force to read Int
