@@ -1,3 +1,8 @@
 console.log(10);
 console.log(typeof 10); // verify type
 console.log(10 % 6);
+
+console.log(Math.random); //random number
+console.log(Math.PI); //PI
+
+console.log("10" + 213); String and number
