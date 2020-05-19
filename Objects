@@ -1,5 +1,6 @@
 // Objects
 // Collection of name value pairs
+// Key/Value pairs
 
 var myOtherObject = {
   1: "Chris",
@@ -16,3 +17,23 @@ var datad = {
 };
 
 console.log(datad);
+
+
+
+
+//Constructor pattern
+function Donut(type, glazed, sweetness, hasChocolate){
+  this.type = type;
+  this.glazed = glazed;
+  this.sweetness = sweetness;
+  this.hasChocolate = hasChocolate
+  this.sayType = function (){
+    console.log("Type: " + this.type);
+  }
+ this.showSweetness = function (){
+   console.log("Sweentess");
+ } ;
+}
+
+var coconutDonut = new Donut("coconut", false, 10, true)
+console.log(coconutDonut)
