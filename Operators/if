@@ -1,1 +1,15 @@
+// If statement
+const shouldSayHi = true;
 
+if (shouldSayHi === true) {
+  console.log("Derp")
+}
+
+// If/else statement
+const shouldSayHi2 = false;
+
+if (shouldSayHi2 === true) { // use ====
+  console.log("Derp") 
+} else {
+  console.log("Nope")
+}
