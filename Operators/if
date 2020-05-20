@@ -13,3 +13,14 @@ if (shouldSayHi2 === true) { // use ====
 } else {
   console.log("Nope")
 }
+
+const bankAccountBalance = 124; // nested if
+const costOfItem = 123
+const tax = 0.50;
+
+if (bankAccountBalance >= costOfItem) {
+  console.log("Balance OK");
+  if(tax >= 0.50) {
+    console.log("Tax")
+  }
+}
