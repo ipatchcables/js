@@ -1,1 +1,37 @@
+//Block Scoping 
+// Best practice declare vars as needed not global
 
+function sayHi(){ // In Scope
+  var sayHi = true;
+  if (sayHi === true) {
+    var myName = "Chris";
+    console.log("Hi" + "" + myName)
+  }
+}
+sayHi()
+
+function sayHi2(){ //Out of scope
+  var sayHi2 = true;
+  if (sayHi === true) {
+    var myName = "Chris";
+  }
+   console.log("Hi" + "" + myName)
+}
+sayHi()
+
+function sayHello(){ //In scope
+  var shouldSayHi = true;
+  var reallySayHi = true;
+  
+  if (shouldSayHi === true) {
+    var myName = "Chris";
+    console.log(myName)
+    if (reallySayHi === true) {
+      var myLastName = "shit";
+       console.log(myLastName)
+    }
+ 
+  }
+ 
+}
+sayHello()
