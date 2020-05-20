@@ -1,0 +1,27 @@
+// 
+const numberFive = 5;
+console.log(typeof numberFive)
+
+const stringFive = "5"
+console.log(typeof stringFive)
+
+console.log(numberFive === stringFive)
+
+console.log(numberFive == stringFive) // will change type
+
+
+if (numberFive == stringFive) {
+  console.log("hi")
+} else {
+  console.log("falsE")
+}
+
+
+// array
+const myArray = [1,2,3,4];
+const myOtherArray = [1,2,3,4]
+
+console.log(myArray === myOtherArray)
+
+const myObject = { name: "Chris}
+const myOtherObject = { name : "Bane"}
