@@ -12,3 +12,11 @@ if (bankAccountBalance >= costOfItem && canSpendMoney ===  true && costOfItem < 
 != not equal
 ****//
 
+const bankAccountBalance = 124; // logical stuff
+const costOfItem = 123
+const canSpendMoney = true;
+const hasReachedCreditLimit = false;
+
+if (!hasReachedCreditLimit) {
+  console.log("Can purchase")
+}
