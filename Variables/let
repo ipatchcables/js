@@ -1,0 +1,45 @@
+
+function sayHello(){ // Let is scoped to the block
+  var shouldSayHi = true;
+  var reallySayHi = true;
+  
+  if (shouldSayHi === true) {
+    let myName = "Chris";
+  }
+  console.log("hi" + myName)
+ 
+}
+sayHello()
+
+
+function sayHello(){ // Let is scoped to the block 
+  var shouldSayHi = true;
+  var reallySayHi = true;
+  
+  if (shouldSayHi === true) {
+    let myName = "Chris";
+      console.log("hi" + myName)
+  }
+
+ 
+}
+sayHello()
+
+
+
+function sayHello(){ // Let is scoped to the block 
+  var shouldSayHi = false; // this
+  var reallySayHi = true;
+  let myName;
+  
+  if (shouldSayHi === true) {
+    myName = "Chris";
+      console.log("hi" + myName)
+  }
+else {
+  myName = "Bob";
+  console.log("Hi bob")
+}
+ 
+}
+sayHello()
