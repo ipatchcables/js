@@ -1,0 +1,24 @@
+
+
+//const
+// cannot be reassigned
+// block scope
+const MYNAME = "Chris";
+console.log(MYNAME);
+
+const myArray = [1,2,3,4];
+myArray.push(5,6,7,8,9);
+console.log(myArray);
+
+const myObject = { Name: "Chris",
+                 age: 32,};
+console.log(myObject)
+myObject.name = "derp";
+console.log(myObject)
+
+function sayHi(){
+  if (true) {
+    const myName = "Jim";
+  }
+}
+sayHi()
