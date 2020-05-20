@@ -1,0 +1,18 @@
+//
+const myNumber = 123;
+const mySecond = 120;
+
+if (myNumber === 123)
+  console.log("Is equal to 123")
+  else {
+    console.log("Does not eqaul 123")
+  }
+
+//
+const myNumber1 = 123;
+const mySecond2 = 120;
+
+if (myNumber1 > mySecond2 ) {
+  console.log("Is equal to 123")
+ 
+}
