@@ -1,1 +1,12 @@
+const bankAccountBalance = 124; 
+const costOfItem = 125
+const hasCreditCard = true;
+const hasReachedCreditLimit = false;
 
+if (bankAccountBalance >= costOfItem){
+ console.log("Congrats pay with cash")
+} else {
+  console.log("not enough cash")
+} if (hasCreditCard && !hasReachedCreditLimit) {
+  console.log("you can pay wwith CC")
+}
