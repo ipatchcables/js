@@ -1,0 +1,35 @@
+const bankAccountBalance = 124; 
+const costOfItem = 123
+const canCreditCard = true;
+const hasReachedCreditLimit = false;
+
+//*** if (hasReachedCreditLimit === false) { // not operator - is this false?
+  console.log("!=")
+}
+//***
+
+if (!hasReachedCreditLimit) { // not operator - is this false?
+  console.log("!=")
+}
+
+const bankAccountBalance = 124; 
+const costOfItem = 123
+const canCreditCard = true;
+const hasReachedCreditLimit = false;
+
+let myName;
+
+console.log(myName);
+
+let myName2;
+
+console.log(!myName2);
+
+const bankAccountBalance = 124; 
+const costOfItem = 123
+const hasCreditCard = true;
+const hasReachedCreditLimit = false;
+
+if ((bankAccountBalance >= costOfItem) || hasCreditCard && !hasReachedCreditLimit ){
+ console.log("poop");
+}
