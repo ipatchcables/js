@@ -1,1 +1,18 @@
+/*
+"A function is a JavaScript procedure - a set of statements that performs a task or calculates a value.[...]"
+*/
 
+function sayHi () {
+  console.log("Hello")
+}
+sayHi();
+
+function check(){
+  myName = "chris";
+  if (!myName) {
+    console.log("Is Chris")
+    } else {
+      console.log("Is not Chris")
+    }
+}
+check()
