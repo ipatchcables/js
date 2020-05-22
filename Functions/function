@@ -29,3 +29,13 @@ function numberDoubler(num){ // Return Value
 }
 
 console.log(numberDoubler(10));
+
+
+const squaredNumber = function(num) {
+  return num * num;
+}
+
+const numberAdder = function(num1, num2){
+  return num1 + num2;
+}
+console.log(numberAdder(squaredNumber(4),10));
