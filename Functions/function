@@ -2,6 +2,7 @@
 "A function is a JavaScript procedure - a set of statements that performs a task or calculates a value.[...]"
 */
 //JavaScript is untyped. You do not have to specify the type when delcaring variables.
+// Hoisting is when the functions are brought to the top of the code when being compiled. Functions can be declared anywhere.
 function sayHi () {
   console.log("Hello")
 }
