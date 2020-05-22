@@ -1,0 +1,14 @@
+//Nested Functions (closure)
+
+function squareAndMultiply(num1,num2)  { // num1 and num2  (input)
+  
+  function squarer(x) { //cannot call squarer outside of main func
+    return x * x;
+  }
+  function multipyBy10(y) {
+    return y * 10;
+  }
+  return squarer(num1) * multipyBy10(num2); // 40 * 16
+}
+
+console.log(squareAndMultiply(4, 4))
