@@ -1,0 +1,29 @@
+// Function expression
+// Almost like an anonymous function in golang?
+
+var sayHi = function() {
+console.log("hi")
+}
+sayHi();
+
+var sayHi = () => { //same as above
+  console.log("Say hi")
+}
+sayHi();
+
+const multiplier = (num1, num2) => { //Function expression
+  return num1 + num2;
+}
+console.log(multiplier(1,6));
+
+const users = [
+  {name: "Chris", age: 90},
+  {name: "Tom", age: 90},
+  {name: "is", age: 90}
+];
+
+const userNameList = users.map(function(name) {
+          return name.name;
+          });
+console.log(userNameList);
+
