@@ -27,3 +27,6 @@ const userNameList = users.map(function(name) {
           });
 console.log(userNameList);
 
+const multiply = (x, y) => x * y; // One line expression
+console.log(multiply(2,4))
+
