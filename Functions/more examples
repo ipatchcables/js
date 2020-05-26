@@ -16,3 +16,22 @@ const doubledNumbers = (num) => { // takes a number and doubles
   return numberContainer;
 }
 console.log(doubledNumbers(numbers))
+const bankAccount = {
+  canSpendMoney: true,
+  balance: 100
+}
+
+function derp(price,acct=bankAccount){
+  if (acct.canSpendMoney) {
+    acct.balance -= price;
+   if (acct.balance <= 0) {
+     acct.canSpendMoney = false;
+   }
+   
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(derp(100))
+console.log(derp(1))
