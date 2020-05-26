@@ -1,0 +1,18 @@
+const numbers = [1,2,3,4,5,6,8,9,10]; // return numbers dived by 2
+
+const filteredNumbers = numbers.filter(function(num){
+  
+  return num % 2 === 0;
+});
+
+console.log(filteredNumbers)
+
+const doubledNumbers = (num) => { // takes a number and doubles
+  const numberContainer = []; //takes an array
+  num.forEach((n) => {
+    const doubled = n * 2;
+    numberContainer.push(doubled);
+  });
+  return numberContainer;
+}
+console.log(doubledNumbers(numbers))
