@@ -1,0 +1,21 @@
+function logAllArgs(x,y,z) {
+console.log(arguments);
+}
+
+logAllArgs(1,2,"tree");
+
+function logAllArgs(x) {
+  const args= Array.prototype.slice.call(arguments, logAllArgs.length)
+console.log(args);
+}
+
+logAllArgs(1,2,"tree");
+
+
+function Dog(years, breed) { // Constructor
+  this.age = years;
+  this.type = breed;
+  
+}
+const spike = new Dog(3, "poop");
+console.log(spike)
