@@ -1,0 +1,29 @@
+function numCheck(num){
+  let value;
+  switch(num) {
+    case 0:
+    case 1:
+    case 2:
+      value = "Low Range";
+      break;
+    case 3:
+    case 4:
+    case 5:
+      value = "Mid Range";
+      break;
+    case 6:
+    case 7:
+    case 8:
+      value =  "High Range";
+      break;
+    default:
+      value  = "Done"
+      return;
+  }
+  setVolume(value);
+}
+
+function setVolume(n) {
+console.log("Volume set at " + n);
+}
+numCheck(2)
