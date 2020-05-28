@@ -20,3 +20,22 @@ console.log("I am looping");
   console.log(numberOfLoops);
   numberOfLoops += 1;
 }
+let num1 = 0;
+let num2 = 0;
+while (num1 < 100) { // while less than 100
+  num1 += 5; // iterate by 5
+  console.log(num1);
+  num2 += num1; // 
+}
+console.log(num2)
+
+let num1 = 0;
+let num2 = 0;
+while (num1 < 100) { // while less than 100
+  num1 += 5; // iterate by 5
+  console.log(num1);
+  loopDeloop() // Loop over a function
+}
+function loopDeloop() {
+  console.log("I'm looping")
+}
