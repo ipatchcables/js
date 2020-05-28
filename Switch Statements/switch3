@@ -1,0 +1,17 @@
+const donutPicker = (flav) => { // Switch
+switch(flav) {
+case 's':
+return "sprinkles";
+case 'c':
+return "chocolate glazed";
+case 'b':
+return "bear claw";
+default:
+return "Did not understand";
+}
+}
+const donuts = (selection) => { // Takes return value and assign to a const
+const selectedDonut = donutPicker(selection);
+console.log("You have slected " + selectedDonut);
+}
+donuts("s");
