@@ -1,0 +1,22 @@
+//Loops
+// Quick and easy way to do something repeatedly
+/*
+Many types of loops but all do basaically the same thing:
+repeat something (i.e. an action a set number of times)
+*/
+
+//While Loop
+// While loop
+
+/*
+while (condition) {
+  statement
+}
+*/
+
+let numberOfLoops = 0; // Infinite loop
+while(numberOfLoops < 10){
+console.log("I am looping");
+  console.log(numberOfLoops);
+  numberOfLoops += 1;
+}
