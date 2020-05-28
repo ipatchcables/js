@@ -1,0 +1,69 @@
+// Switch statements
+
+/*
+switch (epression) {
+  case vlaue1:
+  statement to be executed when result of expression matches value1
+  break;
+  case value2:
+  ...
+  break;
+  default: 
+  break:
+}
+
+*/
+
+const myFruit = "adpple";
+
+if (myFruit === "apple") {
+console.log("Awesome, I love apples");
+} else if (myFruit === "orange") {
+console.log("Orannges are cool");
+} else if (myFruit === "pear") {
+console.log("Pears are great");
+} else { 
+console.log("Done");
+}
+
+
+
+const myFruit = "orange"; // switch statement
+
+switch (myFruit) {
+  case "apple":
+    console.log("apple");
+    break;
+  case "orange":
+   console.log("orange");
+    break;
+  default:
+    console.log("I didn't understand")
+}
+
+function numCheck(num){
+  let value;
+  switch(num) {
+    case 0:
+    case 1:
+    case 2:
+      value = "Low Range";
+      break;
+    case 3:
+    case 4:
+    case 5:
+      value = "Mid Range";
+      break;
+    case 6:
+    case 7:
+    case 8:
+      value =  "High Range";
+      break;
+    default:
+      value  = "Done"
+      return;
+  }
+  console.log("This value is " + value);
+}
+
+numCheck(1)
