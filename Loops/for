@@ -55,3 +55,29 @@ x += 1;
   }
   console.log(x)
 }
+
+
+for (let i = 0 ; i < 10 ; i++) { // For loop inseption
+  console.log("Top loop" ); // Execute once
+  for (let a = 0 ; a < 10 ; a++) {
+  console.log("Inner loop");  // Execute 10 times 
+  }
+}
+
+
+// nested for loop
+
+outerLoop:
+for (let i = 0 ; i < 10 ; i++) { // For loop inseption
+  console.log("Top loop" ); // Execute once
+  innerLoop:
+  for (let a = 0 ; a < 10 ; a++) {
+  console.log("Inner loop");  // Execute 10 times 
+    if (a === 4) {
+      break ;
+    }
+    if ( i === 5) {
+      break outerLoop;
+    }
+  }
+}
