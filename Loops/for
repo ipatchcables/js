@@ -36,13 +36,22 @@ for(let i = 1; i <= 100; i += 1) {  //
     continue; // tells code to start next iteration of loop
   }              
   else if (i % 3 === 0) {
-    console.log("fizz"); //
+    continue; //
   } 
   else if (i % 5 ===0) {
-      console.log("buzz"); // 
+      continue; // 
     }
   else {
   console.log(i)
 }
 }
   
+let x = 0;
+while (x < 10) {
+x += 1;
+  if (x === 5) {
+    console.log("I am being skipped")
+    continue;
+  }
+  console.log(x)
+}
