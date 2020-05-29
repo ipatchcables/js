@@ -11,3 +11,20 @@ for (var i = 0; i < arr.length ; i += 1) {
 }
 
 iceCreamLoop(iceCream, "t");
+
+
+for(let i = 1; i <= 100; i += 1) {  // If no remainder by 3 and 5 print FizBuzz
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("Fizzbuzz");
+               }              
+  else if (i % 3 === 0) {
+    console.log("fizz"); // If no remainder by 3 print Fizz
+  } 
+  else if (i % 5 ===0) {
+      console.log("buzz"); // If no remainder by 5 print buzz
+    }
+  else {
+  console.log(i)
+}
+}
+  
