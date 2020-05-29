@@ -1,0 +1,13 @@
+// For every derp do derp
+//
+const iceCream = ["vanilla", "coco", "rocky road", "strawberry"]
+
+function iceCreamLoop(arr, type) {
+for (var i = 0; i < arr.length ; i += 1) {
+  if (arr[i] === type) {
+    console.log(arr[i] + "is at postion: " + " " + i)
+  }
+}
+}
+
+iceCreamLoop(iceCream, "t");
