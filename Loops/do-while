@@ -1,0 +1,26 @@
+const names = ["Chris", "Kristy", "Jaxson", "Shayla"];
+
+function  nameLooper(arr, userName) {
+  let index = 0;
+  while(index < arr.length) {
+    if (arr[index] === userName) {
+      console.log(arr[index]);
+      break;
+    }
+    index +=1;
+  }
+}
+nameLooper(names,"Chris")
+
+
+//do...while
+do {
+statemnet
+} while (condition)
+
+let shouldRunOnlyOnce = false;
+
+do {
+console.log ("Looping");
+shouldRunOnlyOnce = false;
+} while (shouldRunOnlyOnce);
