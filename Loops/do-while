@@ -14,13 +14,33 @@ nameLooper(names,"Chris")
 
 
 //do...while
+*/
 do {
 statemnet
 } while (condition)
-
-let shouldRunOnlyOnce = false;
+*/
+let condition;
 
 do {
-console.log ("Looping");
-shouldRunOnlyOnce = false;
-} while (shouldRunOnlyOnce);
+const userInput = prompt("Enter q to exit");
+  if (userInput === "q") {
+    condition === false;
+  } else {
+    condition = true;
+  }
+  
+  
+  let totalMoney = 100;
+
+do {
+  checkIfCanPurchase ()
+} while (totalMoney > 500);
+
+function checkIfCanPurchase() {
+  if (totalMoney > 500) {
+    console.log("Can purchase");
+  } else {
+    console.log("Can't purchase")
+}
+}
+  } while (condition);
