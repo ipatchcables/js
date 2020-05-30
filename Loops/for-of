@@ -1,0 +1,11 @@
+// For looping data like values in an array
+
+const drinks = ["coffee", "sprite", "tea", "coke", "pepsi"] // for of
+
+for (const d of drinks) {
+  if ( d === "tea") {
+    break;
+}
+  console.log(d);
+}
+ 
