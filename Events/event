@@ -1,0 +1,5 @@
+// Events (Accessing DOM)
+
+document.addEventListener("click", function(){
+  alert("Clicked!")
+})
