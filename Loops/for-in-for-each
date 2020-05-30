@@ -10,3 +10,9 @@ for (let prop in users){
  }
   console.log(users[prop]);
 }
+
+
+const drinks = ["coffe", "Sprite"];
+drinks.forEach((d) => {
+  console.log(d);
+}) ;
