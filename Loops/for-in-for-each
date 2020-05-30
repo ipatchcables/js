@@ -1,0 +1,12 @@
+/*
+Loop through an object's properties in arbitrary order
+*/
+
+const users = {1: "Sally", 2: "Billy", 3: "Ashley", 4: "Timmy"};
+
+for (let prop in users){
+ if (users[prop] === "Sally") { //Remove sally and replace with unkown
+   users[prop] = "Unkown";
+ }
+  console.log(users[prop]);
+}
