@@ -1,0 +1,24 @@
+const clickDiv = document.getElementById("clicky");
+const clickableButton = clickDiv.querySelector("button");
+
+clickableButton.addEventListener("click", logEvent);
+
+function logEvent(e) {
+  clickableButton.innerText = "Plz no click";
+  console.log(e.type);
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div id="clicky">
+  test text
+  <button>Click here!</button>
+</body>
+</html>
