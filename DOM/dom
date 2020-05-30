@@ -1,3 +1,8 @@
 document.body.innerText = "Somethng else"
 
+document.body.innerHTML = "Somethng else"
+
 console.log(document) // list DOM
+
+const myTag = document.getElementsByTagName("P");
+console.log(myTag);
