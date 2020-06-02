@@ -1,0 +1,10 @@
+const name1 = {
+  name: "Billy",
+  age: 16,
+  sayName: function(){
+  console.log("My name is ${this.name}")
+},
+}
+
+const name2 = Object.create(name1); // Inherit above
+name2.sayName();
