@@ -1,0 +1,32 @@
+const name1 = {
+  name: "Billy",
+  age: 16,
+  sayName: function(){
+  console.log(`My name is ${this.name}`)
+},
+}
+
+const name2 = Object.create(name1);
+name2.sayName();
+
+function Animal(name, age, breed) {
+  const obj = {}
+  obj.name = name; // or use this.
+  obj.age = age;/// this.name
+  obj.breed = breed; //this.breed
+  return obj;
+  
+}
+Animal.prototype.sayBreed = function (){
+  console.log(`I am this  ${this.breed}`);
+}
+
+
+const dog1 = new Animal("Spike", 3, "Lab");
+console.log(dog1.name)
+//dog1 inherist from animal which inherits from protoytype objhetct
+
+const dog2 = new Animal("Spike", 3, "Lab");
+console.log(dog2.hasOwnProperty())
+dog2.sayBreed("sayBreed");
+dog2.sayBreed();
