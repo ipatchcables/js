@@ -12,3 +12,4 @@ constructor (name, age){
 
 const janeDoe = new Person("Jane", 45);
 janeDoe.greetings();
+console.log(Person.prototype)
