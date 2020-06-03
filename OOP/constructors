@@ -28,5 +28,13 @@ console.log(dog1.name)
 
 const dog2 = new Animal("Spike", 3, "Lab");
 console.log(dog2.hasOwnProperty())
-dog2.sayBreed("sayBreed");
-dog2.sayBreed();
+
+
+function Dog(name, age, breed){ //Instantiates and objerct that iherits Animal
+  Animal.call(this, name, age);
+  this.breed = breed;
+}
+
+const barly = new Dog("Barly", 1, "Poo");
+console.log(Dog.prototype.constructor); // Use for dev tools to see whjat objects are being called
+console.log(Dog.prototype);
