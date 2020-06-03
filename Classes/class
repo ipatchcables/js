@@ -13,3 +13,12 @@ constructor (name, age){
 const janeDoe = new Person("Jane", 45);
 janeDoe.greetings();
 console.log(Person.prototype)
+
+class Employee extends Person {
+  constructor(name, age, position) {
+    super(name, age); //Inherits (superclass) Person only if name and age are inputted
+    this.position = position;
+  }
+}
+const barb = new Employee("Barb", 12, "dev");
+console.log(barb)
