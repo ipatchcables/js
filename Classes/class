@@ -1,0 +1,23 @@
+// Classes
+
+function Person (name, age) {
+this.name = name;
+this.age = age;
+}
+
+Person.prototype.greetings = function (){
+console.log("Greetings")
+}
+
+function Employee (name,age,role) { // Inherits the context of Person
+Person.call(this, name, age);
+this.role = role;
+}
+
+Employee.prototype = Object.create(Person.prototpye);
+Employee.prototype.constructor = Employee;
+
+const bill = new Employee("Bill", 41, "janitor");
+bill.greetings();
+
+ // Old way
