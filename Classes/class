@@ -26,3 +26,24 @@ class Employee extends Person {
 const barb = new Employee("Barb", 12, "dev");
 console.log(barb)
 barb.testGreeting();
+//
+//
+//
+//
+class Customer extends Person {
+  constructor({name="customer", age="n/a", contactMethod}) {
+    super(name,age);
+    this.contactMethod = contactMethod;
+    this.accountCredit = null;
+  }
+  addCredit(amount) {
+    this.accountCredit += amount;
+  }
+  reduceCredit(amount){
+    this.accountCredit -= amount;
+  }
+}
+
+const customer1 = new Customer({contactMethod: "email"});
+console.log(customer1.accountCredit);
+customer1.addCredit(100);
