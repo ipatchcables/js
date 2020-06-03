@@ -17,8 +17,8 @@ function Animal(name, age, breed) {
   return obj;
   
 }
-Animal.prototype.sayBreed = function (){
-  console.log(`I am this  ${this.breed}`);
+Animal.prototype.makeNoise = function (){
+  console.log(`Generic animal noise`);
 }
 
 
@@ -26,8 +26,6 @@ const dog1 = new Animal("Spike", 3, "Lab");
 console.log(dog1.name)
 //dog1 inherist from animal which inherits from protoytype objhetct
 
-const dog2 = new Animal("Spike", 3, "Lab");
-console.log(dog2.hasOwnProperty())
 
 
 function Dog(name, age, breed){ //Instantiates and objerct that iherits Animal
@@ -36,5 +34,23 @@ function Dog(name, age, breed){ //Instantiates and objerct that iherits Animal
 }
 
 const barly = new Dog("Barly", 1, "Poo");
-console.log(Dog.prototype.constructor); // Use for dev tools to see whjat objects are being called
+console.log(Dog.prototype.constructor);
 console.log(Dog.prototype);
+
+function Cat(name,age,color) {
+  Animal.call(this,name,age);
+  this.coloration = color;
+}
+Cat.prototype = Object.create(Animal.prototype)
+Cat.prototype.constructor = Cat;
+Cat.prototype.scratchPost = function () {
+  console.log("Scracth post");
+}
+
+function Kitten(name, age, color, litter){
+  Cat.call(this, name, age, color); 
+  this.litter = litter;
+}
+
+const tinykitty = new Kitten("spot", 2, "red", 1);
+console.log(tinykitty instanceof Kitten); //Boolean to check instance
