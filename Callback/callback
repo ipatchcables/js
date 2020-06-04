@@ -1,0 +1,7 @@
+function sayWhenDone(){
+console.log("Done");
+}
+
+function looper(number, cb) {
+
+}
