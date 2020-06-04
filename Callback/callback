@@ -1,7 +1,14 @@
+
+// Callback function
 function sayWhenDone(){
 console.log("Done");
 }
 
+// Parent function
 function looper(number, cb) {
-
+for (let i = 0; i < number ; i += 1) {
+  console.log(i)
 }
+  cb();
+}
+looper(6, sayWhenDone)
