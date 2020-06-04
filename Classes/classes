@@ -1,0 +1,24 @@
+class Family {
+constructor(lastName) {
+this.lastName = lastName;
+}
+sayFamilyName() {
+console.log("I'm inheritted to Paernt and Child")
+}
+}
+
+class Parent extends Family {
+constructor(lastName, firstName) {
+super(lastName);
+this.firstName = firstName;
+}
+}
+
+class Child extends Family {
+constructor(lastName, firstName) {
+super(lastName);
+this.firstName = firstName;
+}
+}
+const dad = new Parent("Smith", "George")
+dad.sayFamilyName()
